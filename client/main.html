@@ -1,0 +1,21 @@
+<head>
+  <title>Microscope</title>
+</head>
+<body>
+  <div class="container">
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="{{postsListPath}}">Microscope</a>
+      <ul class="nav">
+        {{#if currentUser}}<li><a href="{{postSubmitPath}}">New</a></li>{{/if}}
+      </ul>
+      <ul class="nav pull-right">
+        <li>{{loginButtons}}</li>
+      </ul>
+    </div>
+  </header>
+  <div id="main" class="row-fluid">
+    {{renderPage}}
+  </div>
+  </div>
+</body>
